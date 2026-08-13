@@ -1,2 +1,2 @@
-# rubikon-ventures
-Personal Ecosystem
+# Rubikon Venture
+Personal Digital Ecosystem for Agentic Collaboration
