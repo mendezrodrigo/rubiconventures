@@ -3,467 +3,1840 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rubikon</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="noise"></div>
 
-  <div class="site-shell">
-    <header class="site-header">
-      <div class="brand-block">
-        <div class="brand-row">
-          <div class="brand-logo" aria-hidden="true">
-            <svg viewBox="0 0 120 120" class="brand-logo-svg" xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" y="14" width="84" height="92" rx="0" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.7" opacity="0.0"/>
-              <g fill="none" stroke="#f3f2ee" stroke-width="1.7" stroke-linecap="round" opacity="0.96">
-                <path d="M20 20 C36 20, 41 20, 49 20 C54 18, 58 15, 62 12 C68 17, 73 20, 100 20"/>
-                <path d="M20 26 C36 26, 42 26, 49 26 C54 24, 58 21, 63 18 C68 22, 74 26, 100 26"/>
-                <path d="M20 32 C35 32, 42 32, 49 32 C54 30, 58 27, 63 24 C69 28, 74 32, 100 32"/>
-                <path d="M20 38 C35 38, 41 38, 47 38 C51 36, 56 31, 60 28 C66 32, 72 38, 100 38"/>
-                <path d="M20 44 C35 44, 40 44, 46 44 C51 41, 55 35, 59 32 C64 37, 71 44, 100 44"/>
-                <path d="M20 50 C35 50, 40 50, 45 50 C49 46, 53 40, 58 36 C63 42, 69 50, 100 50"/>
-                <path d="M20 56 C35 56, 39 56, 44 56 C48 52, 52 45, 57 40 C62 47, 69 56, 100 56"/>
-                <path d="M20 62 C35 62, 39 62, 43 62 C47 58, 51 50, 56 45 C61 52, 68 62, 100 62"/>
-                <path d="M20 68 C35 68, 39 68, 44 68 C49 64, 54 58, 60 52 C65 58, 71 68, 100 68"/>
-                <path d="M20 74 C35 74, 40 74, 45 74 C50 70, 56 64, 61 58 C67 64, 73 74, 100 74"/>
-                <path d="M20 80 C35 80, 41 80, 46 80 C52 76, 58 70, 63 64 C69 70, 75 80, 100 80"/>
-                <path d="M20 86 C35 86, 41 86, 47 86 C53 82, 59 76, 65 70 C70 76, 76 86, 100 86"/>
-                <path d="M20 92 C35 92, 42 92, 48 92 C54 88, 60 83, 66 76 C71 82, 77 92, 100 92"/>
-                <path d="M20 98 C35 98, 43 98, 49 98 C55 94, 61 89, 67 82 C73 88, 79 98, 100 98"/>
-              </g>
-            </svg>
-          </div>
-          <div class="brand-mark">Rubikon</div>
-        </div>
-        <p class="brand-sub">
-          A network system for people, skills, ideas, and collaborators.
-        </p>
+  <meta
+    name="description"
+    content="Rubikon Venture — living infrastructure for trust, talent, projects, and collaboration."
+  />
+
+  <title>Rubikon Venture</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="new-rubicon-style.css" />
+</head>
+
+<body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       FIXED NAVIGATION
+  ========================================================== -->
+  <header class="site-nav">
+    <div class="shell nav-inner">
+
+      <button
+        class="brand"
+        type="button"
+        data-view-link="identity"
+        aria-label="Open Rubikon Identity"
+      >
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+            >
+              <path d="M20 20H48L60 10L72 20H100"/>
+              <path d="M20 30H47L60 19L73 30H100"/>
+              <path d="M20 40H45L58 29L75 40H100"/>
+              <path d="M20 50H44L57 39L76 50H100"/>
+              <path d="M20 60H45L59 48L75 60H100"/>
+              <path d="M20 70H46L61 58L74 70H100"/>
+              <path d="M20 80H48L63 68L72 80H100"/>
+              <path d="M20 90H49L65 78L71 90H100"/>
+              <path d="M20 100H50L67 88L70 100H100"/>
+            </g>
+          </svg>
+        </span>
+
+        <span class="brand-copy">
+          <span class="brand-name">Rubikon</span>
+          <span class="brand-subtitle">Living collaboration infrastructure</span>
+        </span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <button
+          class="nav-link active"
+          type="button"
+          data-view="identity"
+        >
+          Identity
+        </button>
+
+        <button
+          class="nav-link"
+          type="button"
+          data-view="network"
+        >
+          Connection Map
+        </button>
+
+        <button
+          class="nav-link"
+          type="button"
+          data-view="flowboard"
+        >
+          FlowBoard
+        </button>
+      </nav>
+
+      <div class="auth-actions">
+        <button
+          class="auth-button auth-login"
+          type="button"
+        >
+          Log in
+        </button>
+
+        <button
+          class="auth-button auth-signup"
+          type="button"
+        >
+          Sign up
+        </button>
       </div>
 
-      <nav class="top-nav">
-        <button class="nav-button active" data-view="identity" type="button">Identity</button>
-        <button class="nav-button" data-view="network" type="button">Connection Map</button>
-        <button class="nav-button" data-view="flowboard" type="button">FlowBoard</button>
-        <button class="nav-button auth-nav-button" type="button">Log in</button>
-        <button class="nav-button auth-nav-button auth-nav-button-primary" type="button">Sign up</button>
-      </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="identity-view" class="view active">
-        <div class="hero-block">
-          <p class="eyebrow">Identity Layer</p>
-          <h1 class="identity-hero-title">
-            <span class="line-main">Know what a person is <span class="accent-word">building</span>.</span>
-            <span class="line-sub">How they <span class="accent-word">collaborate</span>,</span>
-            <span class="line-sub">what they will not <span class="accent-word">compromise</span>.</span>
+
+  <!-- =========================================================
+       MAIN APPLICATION
+  ========================================================== -->
+  <main class="app-shell shell">
+
+    <!-- =======================================================
+         IDENTITY VIEW
+    ======================================================== -->
+    <section
+      id="identity-view"
+      class="view active"
+      aria-labelledby="identity-title"
+    >
+
+      <!-- HERO -->
+      <div class="identity-hero">
+
+        <div class="hero-copy">
+
+          <p class="eyebrow">
+            Identity intelligence
+          </p>
+
+          <h1 id="identity-title">
+            Know what a person is
+            <span class="accent">building</span>.
           </h1>
-        </div>
 
-        <div class="identity-layout">
-          <div class="identity-cards-grid">
-            <article class="identity-card">
-              <div class="identity-head">
-                <div class="identity-avatar">RM</div>
-                <div>
-                  <h2>Rodrigo Mendez Carrillo</h2>
-                  <p class="muted">@rodrigomendez · Nuremberg</p>
-                </div>
-              </div>
+          <div class="hero-secondary">
+            <p>
+              Know how they
+              <span class="accent">collaborate</span>,
+            </p>
 
-              <section class="identity-panel identity-panel-building">
-                <p class="section-label">What they are building</p>
-                <h3>Rubikon</h3>
-                <p>
-                  A network system for people, skills, ideas, and collaborators to move through digital ecosystems with more clarity, relevance, and momentum.
-                </p>
-              </section>
-
-              <section class="identity-panel identity-panel-culture">
-                <p class="section-label">Culture</p>
-                <div class="chip-row">
-                  <span class="chip">High-agency</span>
-                  <span class="chip">Cross-cultural</span>
-                  <span class="chip">Direct but thoughtful</span>
-                  <span class="chip">Creative seriousness</span>
-                  <span class="chip">Human-centered ambition</span>
-                </div>
-              </section>
-
-              <section class="identity-panel identity-panel-nonnegotiables">
-                <p class="section-label">Non-negotiables</p>
-                <ul class="nonnegotiables-list">
-                  <li>No ghosting</li>
-                  <li>Clear communication</li>
-                  <li>Async-friendly first</li>
-                  <li>Reliability over hype</li>
-                  <li>Mutual respect in collaboration</li>
-                </ul>
-              </section>
-            </article>
-
-            <article class="identity-card">
-              <div class="identity-head">
-                <div class="identity-avatar alt-avatar">AC</div>
-                <div>
-                  <h2>Beatrice de Villa</h2>
-                  <p class="muted">@beatricedevilla · Roma</p>
-                </div>
-              </div>
-
-              <section class="identity-panel identity-panel-building">
-                <p class="section-label">What they are building</p>
-                <h3>Due Signal</h3>
-                <p>
-                  An AI-native diligence layer for technical founders, early-stage operators, and cross-functional collaborators who need sharper trust signals before building together.
-                </p>
-              </section>
-
-              <section class="identity-panel identity-panel-culture">
-                <p class="section-label">Culture</p>
-                <div class="chip-row">
-                  <span class="chip">Structured curiosity</span>
-                  <span class="chip">Fast iteration</span>
-                  <span class="chip">Low-ego rigor</span>
-                  <span class="chip">Security-aware</span>
-                  <span class="chip">Evidence-led decisions</span>
-                </div>
-              </section>
-
-              <section class="identity-panel identity-panel-nonnegotiables">
-                <p class="section-label">Non-negotiables</p>
-                <ul class="nonnegotiables-list">
-                  <li>No inflated claims</li>
-                  <li>No vague ownership</li>
-                  <li>No avoidable security risk</li>
-                  <li>No performative collaboration</li>
-                  <li>Respect for technical depth</li>
-                </ul>
-              </section>
-            </article>
+            <p>
+              and what they will not
+              <span class="accent">compromise</span>.
+            </p>
           </div>
 
-          <aside class="side-note">
-            <p class="eyebrow">Essential, not performative</p>
-            <h3>Rubikon is not a résumé.</h3>
-            <p>
-              It is a decision surface for collaboration. The goal is not to display everything
-              about a person. The goal is to display what matters before time is wasted.
-            </p>
-            <div class="mini-rule"></div>
-            <p>
-              A strong identity here is narrow, intentional, and current.
-            </p>
-          </aside>
-        </div>
+          <p class="hero-lead">
+            Rubikon turns professional identity into a living collaboration
+            surface — combining current intent, working culture, trust,
+            relationships, and opportunities.
+          </p>
 
-        <button class="feedback-fab visible" id="feedback-button" type="button">Request feedback</button>
-      </section>
+          <div class="hero-actions">
+            <button
+              class="button primary-button"
+              type="button"
+              data-view-link="network"
+            >
+              Explore connections
+            </button>
 
-      <section id="network-view" class="view">
-        <div class="hero-block">
-          <p class="eyebrow">Connection Map</p>
-          <h1 class="section-hero-title">
-        <span class="line-main">Explore your top six collaborations through a living spherical web.</span>
-        </h1>
-        </div>
-        <div class="network-layout">
-          <article class="network-stage-card">
-            <div class="network-topbar">
-              <div>
-                <h2>Top Six Connections</h2>
-                <p class="muted">Hover and click to inspect the active collaboration ring.</p>
-              </div>
+            <button
+              class="button secondary-button"
+              type="button"
+              data-view-link="flowboard"
+            >
+              Open FlowBoard
+            </button>
+          </div>
+
+          <div class="identity-signal-box">
+
+            <p class="kicker">
+              Identity signal
+            </p>
+
+            <p class="signal-question">
+              Who is this person becoming useful to, and what can they
+              meaningfully move forward now?
+            </p>
+
+            <div class="signal-steps">
+              <span>Intent</span>
+              <span>Culture</span>
+              <span>Boundaries</span>
+              <span>Trust</span>
+              <span class="verified-step">Action</span>
             </div>
 
-            <div class="network-stage" id="network-stage">
-              <svg class="network-lines" viewBox="0 0 600 600" preserveAspectRatio="none">
-                <line id="line-center-1" x1="300" y1="300" x2="300" y2="95" />
-                <line id="line-center-2" x1="300" y1="300" x2="478" y2="195" />
-                <line id="line-center-3" x1="300" y1="300" x2="478" y2="405" />
-                <line id="line-center-4" x1="300" y1="300" x2="300" y2="505" />
-                <line id="line-center-5" x1="300" y1="300" x2="122" y2="405" />
-                <line id="line-center-6" x1="300" y1="300" x2="122" y2="195" />
+          </div>
 
-                <line x1="300" y1="95" x2="478" y2="195" />
-                <line x1="478" y1="195" x2="478" y2="405" />
-                <line x1="478" y1="405" x2="300" y2="505" />
-                <line x1="300" y1="505" x2="122" y2="405" />
-                <line x1="122" y1="405" x2="122" y2="195" />
-                <line x1="122" y1="195" x2="300" y2="95" />
+        </div>
+
+
+        <!-- HERO VISUAL -->
+        <div
+          class="hero-art"
+          aria-label="Living Rubikon identity intelligence system"
+        >
+
+          <div class="intelligence-stage">
+
+            <div class="stage-glow"></div>
+
+            <svg
+              class="intelligence-orbits"
+              viewBox="0 0 680 680"
+              aria-hidden="true"
+            >
+
+              <defs>
+
+                <linearGradient
+                  id="orbitGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#DDEEFF"
+                    stop-opacity=".08"
+                  />
+                  <stop
+                    offset="44%"
+                    stop-color="#71B7FF"
+                    stop-opacity=".82"
+                  />
+                  <stop
+                    offset="100%"
+                    stop-color="#235F98"
+                    stop-opacity=".10"
+                  />
+                </linearGradient>
+
+                <linearGradient
+                  id="decisionGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#71B7FF"
+                  />
+                  <stop
+                    offset="100%"
+                    stop-color="#DDEEFF"
+                  />
+                </linearGradient>
+
+                <filter
+                  id="rubikonGlow"
+                  x="-100%"
+                  y="-100%"
+                  width="300%"
+                  height="300%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="6"
+                    result="blur"
+                  />
+
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+
+              </defs>
+
+
+              <!-- ORBITS -->
+              <g
+                class="orbit-system"
+                fill="none"
+                stroke-linecap="round"
+              >
+                <ellipse
+                  cx="340"
+                  cy="333"
+                  rx="252"
+                  ry="170"
+                  transform="rotate(-17 340 333)"
+                  stroke="url(#orbitGradient)"
+                  stroke-width="2.7"
+                />
+
+                <ellipse
+                  cx="340"
+                  cy="333"
+                  rx="217"
+                  ry="245"
+                  transform="rotate(42 340 333)"
+                  stroke="#71B7FF"
+                  stroke-opacity=".27"
+                  stroke-width="1.8"
+                />
+
+                <ellipse
+                  cx="340"
+                  cy="333"
+                  rx="280"
+                  ry="112"
+                  transform="rotate(64 340 333)"
+                  stroke="#DDEEFF"
+                  stroke-opacity=".17"
+                  stroke-width="1.4"
+                />
+              </g>
+
+
+              <!-- INCOMING SIGNALS -->
+              <g
+                class="incoming-signals"
+                fill="none"
+                stroke="#71B7FF"
+                stroke-linecap="round"
+              >
+                <path
+                  d="M44 175 C137 113 228 146 292 232"
+                />
+
+                <path
+                  d="M52 490 C154 530 236 476 294 418"
+                />
+
+                <path
+                  d="M625 148 C560 180 503 226 465 274"
+                />
+
+                <path
+                  d="M638 500 C568 466 509 421 464 379"
+                />
+              </g>
+
+
+              <!-- SIGNAL NODES -->
+              <g
+                class="signal-nodes"
+                fill="#71B7FF"
+                filter="url(#rubikonGlow)"
+              >
+                <circle cx="45" cy="175" r="5"/>
+                <circle cx="53" cy="490" r="4"/>
+                <circle cx="625" cy="148" r="5"/>
+                <circle cx="638" cy="500" r="4"/>
+              </g>
+
+
+              <!-- DECISION PATH -->
+              <path
+                class="decision-path"
+                d="M425 420 C500 456 548 520 583 594"
+                fill="none"
+                stroke="url(#decisionGradient)"
+                stroke-width="4.5"
+                stroke-linecap="round"
+              />
+
+              <circle
+                class="decision-node"
+                cx="583"
+                cy="594"
+                r="8"
+                fill="#DDEEFF"
+                filter="url(#rubikonGlow)"
+              />
+
+            </svg>
+
+
+            <!-- CENTRAL CORE -->
+            <div class="intelligence-core">
+
+              <svg
+                viewBox="0 0 120 120"
+                aria-hidden="true"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                >
+                  <path d="M20 20H48L60 10L72 20H100"/>
+                  <path d="M20 30H47L60 19L73 30H100"/>
+                  <path d="M20 40H45L58 29L75 40H100"/>
+                  <path d="M20 50H44L57 39L76 50H100"/>
+                  <path d="M20 60H45L59 48L75 60H100"/>
+                  <path d="M20 70H46L61 58L74 70H100"/>
+                  <path d="M20 80H48L63 68L72 80H100"/>
+                  <path d="M20 90H49L65 78L71 90H100"/>
+                  <path d="M20 100H50L67 88L70 100H100"/>
+                </g>
               </svg>
 
-              <div class="orbital-grid orbital-grid-1"></div>
-              <div class="orbital-grid orbital-grid-2"></div>
-              <div class="orbital-grid orbital-grid-3"></div>
-
-              <div class="second-ring second-ring-1"></div>
-              <div class="second-ring second-ring-2"></div>
-              <div class="second-ring second-ring-3"></div>
-              <div class="second-ring second-ring-4"></div>
-              <div class="second-ring second-ring-5"></div>
-              <div class="second-ring second-ring-6"></div>
-
-              <div class="center-orb" id="center-orb">
-                <span>You</span>
-              </div>
-
-              <button class="map-node node-1"
-                data-id="1"
-                data-name="Filippo de Cristofaro"
-                data-role="Head of Marketing · Entrepreneurship"
-                data-city="Lisbon"
-                data-building="Growth, storytelling, and entrepreneurial positioning across founder ecosystems."
-                data-culture="Fast-moving, expressive, strategic, socially sharp"
-                data-initials="FD"
-                data-pipeline-title="Marketing and ecosystem path"
-                data-pipeline-summary="Filippo is strongest as a branding, visibility, and founder-ecosystem amplifier."
-                data-pipeline-1="Strengthen narrative and public-facing positioning"
-                data-pipeline-2="Refine founder-community visibility"
-                data-pipeline-3="Open collaboration paths through entrepreneurial networks"
-                type="button">
-                <span class="node-icon">◖◗</span>
-                <span class="node-label">FD</span>
-              </button>
-
-              <button class="map-node node-2"
-                data-id="2"
-                data-name="Francesca Centini"
-                data-role="The Modern Renaissance Founder"
-                data-city="Milano"
-                data-building="Intersections of neuroscience, music, art, and modern creative identity."
-                data-culture="Interdisciplinary, reflective, artistic, intellectually ambitious"
-                data-initials="FC"
-                data-pipeline-title="Creative-intellectual synthesis path"
-                data-pipeline-summary="Francesca is strongest where art, science, and identity need to be translated into a coherent concept."
-                data-pipeline-1="Explore identity and culture framing"
-                data-pipeline-2="Bridge artistic and intellectual communities"
-                data-pipeline-3="Develop stronger interdisciplinary signal clusters"
-                type="button">
-                <span class="node-icon">◖◗</span>
-                <span class="node-label">FC</span>
-              </button>
-
-              <button class="map-node node-3"
-                data-id="3"
-                data-name="Matteo Demasi"
-                data-role="Sapio Founder · Cybersecurity · Digital Sovereignty"
-                data-city="Zug"
-                data-building="Cybersecurity and digital sovereignty systems with a strategic European lens."
-                data-culture="Sovereignty-minded, rigorous, technical, long-range"
-                data-initials="MD"
-                data-pipeline-title="Cybersecurity and sovereignty path"
-                data-pipeline-summary="Matteo is strongest as a high-trust node for digital sovereignty, security logic, and serious technical collaboration."
-                data-pipeline-1="Sharpen trust and privacy framing"
-                data-pipeline-2="Map cybersecurity collaboration paths"
-                data-pipeline-3="Anchor digital sovereignty direction in product logic"
-                type="button">
-                <span class="node-icon">◖◗</span>
-                <span class="node-label">MD</span>
-              </button>
-
-              <button class="map-node node-4"
-                data-id="4"
-                data-name="Galina Shakhanova"
-                data-role="Founder's Associate DTM · McKinsey & Co"
-                data-city="Berlin"
-                data-building="Operational and strategic support around high-level founder and venture execution."
-                data-culture="Sharp, structured, strategic, execution-oriented"
-                data-initials="GS"
-                data-pipeline-title="Execution and strategic ops path"
-                data-pipeline-summary="Galina is strongest where structure, execution discipline, and founder-level support matter most."
-                data-pipeline-1="Improve execution and prioritization logic"
-                data-pipeline-2="Pressure-test strategic next steps"
-                data-pipeline-3="Strengthen founder-operator coordination"
-                type="button">
-                <span class="node-icon">◖◗</span>
-                <span class="node-label">GS</span>
-              </button>
-
-              <button class="map-node node-5"
-                data-id="5"
-                data-name="Ayush Sanghavi"
-                data-role="CEO of CaseSnappy"
-                data-city="New Haven, Connecticut"
-                data-building="Founder-led startup execution with product and company-building focus."
-                data-culture="Founder-driven, ambitious, pragmatic, startup-native"
-                data-initials="AS"
-                data-pipeline-title="Founder-to-founder startup path"
-                data-pipeline-summary="Ayush is strongest as a startup operator node for founder conversations, product traction, and fast-moving execution."
-                data-pipeline-1="Exchange founder-side product lessons"
-                data-pipeline-2="Explore startup collaboration fit"
-                data-pipeline-3="Track possible cross-market venture alignment"
-                type="button">
-                <span class="node-icon">◖◗</span>
-                <span class="node-label">AS</span>
-              </button>
-
-              <button class="map-node node-6"
-                data-id="6"
-                data-name="Kostas Mihalopoulos"
-                data-role="CEO of Runaway Truck Wash · Pharmaceutical Sales"
-                data-city="Austin, Texas"
-                data-building="Operational business growth across service execution, sales, and commercial relationships."
-                data-culture="Commercial, resilient, relationship-driven, practical"
-                data-initials="KM"
-                data-pipeline-title="Commercial growth path"
-                data-pipeline-summary="Kostas is strongest where sales instinct, real-world execution, and business growth discipline overlap."
-                data-pipeline-1="Explore sales and growth strategy parallels"
-                data-pipeline-2="Learn from operator-led execution"
-                data-pipeline-3="Map commercial collaboration angles"
-                type="button">
-                <span class="node-icon">◖◗</span>
-                <span class="node-label">KM</span>
-              </button>
             </div>
-          </article>
 
-          <aside class="network-detail-card" id="network-detail-card">
-            <p class="eyebrow">Selected Connection</p>
-            <h3>Select a collaborator</h3>
-            <p class="muted">
-              Hover or click a node in the connection map to inspect what they are building.
-            </p>
-          </aside>
-        </div>
-      </section>
 
-      <section id="flowboard-view" class="view">
-        <div class="hero-block">
-          <p class="eyebrow">FlowBoard</p>
-          <h1 class="section-hero-title">
-            <h1 class="section-hero-title">
-        <span class="line-main">See what is moving through your network now — people, ideas, signals, and requests.</span>
-        </h1>
+            <!-- SYSTEM LABELS -->
+            <div class="orbit-label orbit-label-one">
+              <i></i>
+              Context
+            </div>
+
+            <div class="orbit-label orbit-label-two">
+              <i></i>
+              Trust
+            </div>
+
+            <div class="orbit-label orbit-label-three">
+              <i></i>
+              Opportunity
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="flowboard-layout">
-          <article class="flow-column">
-            <div class="flow-column-head">
-              <h2>FlowBoard</h2>
-              <p class="muted">Search active themes, people, cities, and signals.</p>
-            </div>
+      </div>
 
-            <div class="search-shell">
-              <input
-                id="flow-search"
-                type="text"
-                placeholder="Search by city, keyword, person, data scientists, cybersecurity, generalists..."
-              />
-            </div>
 
-            <div class="quick-tags" id="quick-tags">
-              <button class="quick-tag" type="button">Generalists</button>
-              <button class="quick-tag" type="button">Polymaths</button>
-              <button class="quick-tag" type="button">Vibe coding</button>
-              <button class="quick-tag" type="button">Data scientists</button>
-              <button class="quick-tag" type="button">Cybersecurity</button>
-              <button class="quick-tag" type="button">Cross-cultural</button>
-              <button class="quick-tag" type="button">Transnational</button>
-              <button class="quick-tag" type="button">Agentic startups</button>
-            </div>
+      <!-- PRINCIPLES STRIP -->
+      <div class="principle-strip">
+        <span>Identity before outreach</span>
+        <span>Context before connection</span>
+        <span>Signal before volume</span>
+        <span>Trust before allocation</span>
+      </div>
 
-            <div class="signals-list" id="signals-list">
-              <div class="signal-card" data-search="berlin founder product generalists startup ecosystems">
-                <p class="signal-type">Person</p>
-                <h3>Berlin-based founder looking for a product thinking partner</h3>
-                <p>
-                  Strong match with startup ecosystems, narrative framing, and strategic product positioning.
-                </p>
-                <button class="ghost-action" type="button">Request intro</button>
+
+      <!-- PROFILE SYSTEM -->
+      <div class="section-head">
+
+        <p class="kicker">
+          Identity layer
+        </p>
+
+        <h2>
+          A profile designed for collaboration,
+          not performance.
+        </h2>
+
+        <p>
+          Rubikon reduces professional identity to the information that
+          changes whether two people should actually work together.
+        </p>
+
+      </div>
+
+
+      <div class="identity-layout">
+
+        <div class="profile-stack">
+
+          <!-- RODRIGO -->
+          <article class="profile-card">
+
+            <header class="profile-header">
+
+              <div class="profile-avatar">
+                RM
               </div>
 
-              <div class="signal-card" data-search="agentic startups ai automation builders operators generalists polymaths">
-                <p class="signal-type">Trend</p>
-                <h3>Early agentic startups are looking for generalist operators</h3>
+              <div class="profile-heading">
+                <h3>
+                  Rodrigo Mendez Carrillo
+                </h3>
+
                 <p>
-                  High signal around builders who can move between product, research, systems, and community.
+                  @rodrigomendez · Nuremberg, Germany
                 </p>
-                <button class="ghost-action" type="button">Explore fit</button>
               </div>
 
-              <div class="signal-card" data-search="polymaths interdisciplinary talent transnational cross-cultural">
-                <p class="signal-type">People</p>
-                <h3>Cross-cultural polymaths are clustering around interdisciplinary startup work</h3>
-                <p>
-                  A strong fit for people who think across strategy, narrative, product, and ecosystems.
-                </p>
-                <button class="ghost-action" type="button">See cluster</button>
-              </div>
+              <span class="profile-state">
+                Building now
+              </span>
 
-              <div class="signal-card" data-search="vibe coding design interface prototyping creative coding">
-                <p class="signal-type">Idea</p>
-                <h3>Vibe coding and interface prototyping are becoming a serious collaboration layer</h3>
-                <p>
-                  Designers, storytellers, and technical generalists are converging around faster concept execution.
-                </p>
-                <button class="ghost-action" type="button">Join thread</button>
-              </div>
+            </header>
 
-              <div class="signal-card" data-search="data scientists signal ranking matching trust graphs analytics">
-                <p class="signal-type">Capability</p>
-                <h3>Data scientists are becoming critical for signal ranking and trust-layer design</h3>
-                <p>
-                  Strong relevance for products that need recommendation logic, fit scoring, and collaboration graphs.
-                </p>
-                <button class="ghost-action" type="button">Map fit</button>
-              </div>
 
-              <div class="signal-card" data-search="cybersecurity trust access identity systems privacy secure collaboration">
-                <p class="signal-type">Capability</p>
-                <h3>Cybersecurity talent is increasingly shaping trust-first collaboration products</h3>
-                <p>
-                  Identity, permissions, privacy, and secure access are no longer side issues. They define product credibility.
-                </p>
-                <button class="ghost-action" type="button">Find experts</button>
-              </div>
-            </div>
-          </article>
+            <div class="profile-section profile-feature">
 
-          <aside class="flow-side">
-            <div class="pipeline-block">
-              <p class="eyebrow">Opportunity Pipeline</p>
-              <h3>From signal to action.</h3>
-              <p>
-                The pipeline is where filtered relevance turns into a next step: intros, pings, collaborations, or saved paths.
+              <p class="section-label">
+                What they are building
               </p>
+
+              <h4>
+                Rubikon Venture
+              </h4>
+
+              <p>
+                A living personal ecosystem for trust, talent allocation,
+                projects, and collaboration — designed to surface the right
+                person at the right moment.
+              </p>
+
             </div>
 
-            <div class="pipeline-list">
-              <div class="pipeline-card">
-                <p class="pipeline-type">Warm intro</p>
-                <h4>Founder and ecosystem operators in Europe</h4>
-                <p>High-potential paths through entrepreneurial and cross-border communities.</p>
+
+            <div class="profile-section">
+
+              <p class="section-label">
+                Collaboration culture
+              </p>
+
+              <div class="chips">
+                <span>High-agency</span>
+                <span>Cross-cultural</span>
+                <span>Direct but thoughtful</span>
+                <span>Creative seriousness</span>
+                <span>Human-centered ambition</span>
               </div>
 
-              <div class="pipeline-card">
-                <p class="pipeline-type">Potential match</p>
-                <h4>Generalist operator roles in agentic startups</h4>
-                <p>Strong overlap with cross-functional, strategic, and fast-moving startup work.</p>
-              </div>
-
-              <div class="pipeline-card">
-                <p class="pipeline-type">Capability cluster</p>
-                <h4>Data scientists and cybersecurity builders</h4>
-                <p>Useful for trust-layer logic, ranking systems, digital sovereignty, and secure collaboration.</p>
-              </div>
-
-              <div class="pipeline-card">
-                <p class="pipeline-type">Open direction</p>
-                <h4>Cross-cultural founder networks and interdisciplinary builders</h4>
-                <p>One of the strongest long-range clusters for Rubikon’s positioning.</p>
-              </div>
             </div>
-          </aside>
+
+
+            <div class="profile-section">
+
+              <p class="section-label">
+                Non-negotiables
+              </p>
+
+              <ul class="boundary-list">
+                <li>No ghosting</li>
+                <li>Clear communication</li>
+                <li>Reliability over hype</li>
+                <li>Mutual respect</li>
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- BEATRICE -->
+          <article class="profile-card">
+
+            <header class="profile-header">
+
+              <div class="profile-avatar secondary-avatar">
+                BV
+              </div>
+
+              <div class="profile-heading">
+                <h3>
+                  Beatrice de Villa
+                </h3>
+
+                <p>
+                  @beatricedevilla · Roma, Italy
+                </p>
+              </div>
+
+              <span class="profile-state">
+                Exploring
+              </span>
+
+            </header>
+
+
+            <div class="profile-section profile-feature">
+
+              <p class="section-label">
+                What they are building
+              </p>
+
+              <h4>
+                Due Signal
+              </h4>
+
+              <p>
+                An AI-native diligence layer for technical founders and
+                early-stage operators who need stronger trust signals before
+                deciding to build together.
+              </p>
+
+            </div>
+
+
+            <div class="profile-section">
+
+              <p class="section-label">
+                Collaboration culture
+              </p>
+
+              <div class="chips">
+                <span>Structured curiosity</span>
+                <span>Fast iteration</span>
+                <span>Low-ego rigor</span>
+                <span>Security-aware</span>
+                <span>Evidence-led</span>
+              </div>
+
+            </div>
+
+
+            <div class="profile-section">
+
+              <p class="section-label">
+                Non-negotiables
+              </p>
+
+              <ul class="boundary-list">
+                <li>No inflated claims</li>
+                <li>No vague ownership</li>
+                <li>No avoidable security risk</li>
+                <li>Respect technical depth</li>
+              </ul>
+
+            </div>
+
+          </article>
+
         </div>
-      </section>
-    </main>
-  </div>
 
-  <script src="script.js"></script>
+
+        <!-- SIDE PRINCIPLE PANEL -->
+        <aside class="identity-side-panel">
+
+          <p class="kicker">
+            Essential, not performative
+          </p>
+
+          <h3>
+            Rubikon is not a résumé.
+          </h3>
+
+          <p class="support-copy">
+            A résumé explains what someone has done.
+            Rubikon is designed to explain what someone is ready to do
+            with you now.
+          </p>
+
+          <div class="identity-flow">
+
+            <div class="identity-flow-item">
+              <span>01</span>
+
+              <div>
+                <strong>Understand intent</strong>
+                <small>What is active now?</small>
+              </div>
+            </div>
+
+            <div class="identity-flow-item">
+              <span>02</span>
+
+              <div>
+                <strong>Evaluate fit</strong>
+                <small>How do they work?</small>
+              </div>
+            </div>
+
+            <div class="identity-flow-item">
+              <span>03</span>
+
+              <div>
+                <strong>Read boundaries</strong>
+                <small>What will they protect?</small>
+              </div>
+            </div>
+
+            <div class="identity-flow-item final-flow-item">
+              <span>✓</span>
+
+              <div>
+                <strong>Choose action</strong>
+                <small>Connect, build, save, or pass.</small>
+              </div>
+            </div>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+
+      <button
+        class="feedback-button visible"
+        id="feedback-button"
+        type="button"
+      >
+        <span>+</span>
+        Request feedback
+      </button>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         CONNECTION MAP VIEW
+    ======================================================== -->
+    <section
+      id="network-view"
+      class="view"
+      aria-labelledby="network-title"
+    >
+
+      <div class="view-head">
+
+        <p class="eyebrow">
+          Connection Map
+        </p>
+
+        <h1 id="network-title">
+          Trust is fluid.
+          Your network should be too.
+        </h1>
+
+        <p>
+          Tier 1 surfaces the six relationships most relevant to you now.
+          Each connection carries context, culture, and a distinct
+          opportunity path.
+        </p>
+
+      </div>
+
+
+      <div class="network-layout">
+
+        <!-- NETWORK -->
+        <article class="network-card">
+
+          <header class="card-head">
+
+            <div>
+              <p class="kicker">
+                Tier 1 · Active relationship graph
+              </p>
+
+              <h2>
+                Top Six Connections
+              </h2>
+            </div>
+
+            <p class="card-meta">
+              Hover or select any person.
+            </p>
+
+          </header>
+
+
+          <div
+            class="network-stage"
+            id="network-stage"
+          >
+
+            <svg
+              class="network-lines"
+              viewBox="0 0 600 600"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+
+              <!-- CENTER TO PERSON -->
+              <line
+                id="line-center-1"
+                x1="300"
+                y1="300"
+                x2="300"
+                y2="95"
+              />
+
+              <line
+                id="line-center-2"
+                x1="300"
+                y1="300"
+                x2="478"
+                y2="195"
+              />
+
+              <line
+                id="line-center-3"
+                x1="300"
+                y1="300"
+                x2="478"
+                y2="405"
+              />
+
+              <line
+                id="line-center-4"
+                x1="300"
+                y1="300"
+                x2="300"
+                y2="505"
+              />
+
+              <line
+                id="line-center-5"
+                x1="300"
+                y1="300"
+                x2="122"
+                y2="405"
+              />
+
+              <line
+                id="line-center-6"
+                x1="300"
+                y1="300"
+                x2="122"
+                y2="195"
+              />
+
+
+              <!-- RELATIONSHIP RING -->
+              <line
+                class="secondary-connection"
+                x1="300"
+                y1="95"
+                x2="478"
+                y2="195"
+              />
+
+              <line
+                class="secondary-connection"
+                x1="478"
+                y1="195"
+                x2="478"
+                y2="405"
+              />
+
+              <line
+                class="secondary-connection"
+                x1="478"
+                y1="405"
+                x2="300"
+                y2="505"
+              />
+
+              <line
+                class="secondary-connection"
+                x1="300"
+                y1="505"
+                x2="122"
+                y2="405"
+              />
+
+              <line
+                class="secondary-connection"
+                x1="122"
+                y1="405"
+                x2="122"
+                y2="195"
+              />
+
+              <line
+                class="secondary-connection"
+                x1="122"
+                y1="195"
+                x2="300"
+                y2="95"
+              />
+
+            </svg>
+
+
+            <div class="network-ring network-ring-one"></div>
+            <div class="network-ring network-ring-two"></div>
+            <div class="network-ring network-ring-three"></div>
+
+
+            <!-- CENTER -->
+            <div class="center-person">
+
+              <span>
+                RM
+              </span>
+
+              <small>
+                You
+              </small>
+
+            </div>
+
+
+            <!-- FILIPPO -->
+            <button
+              class="person-node node-1"
+              type="button"
+
+              data-id="1"
+
+              data-name="Filippo de Cristofaro"
+
+              data-role="Head of Marketing · Entrepreneurship"
+
+              data-city="Lisbon, Portugal"
+
+              data-origin="Italy"
+
+              data-building="Growth, storytelling, entrepreneurial positioning, and founder-community visibility."
+
+              data-culture="Fast-moving, expressive, strategic, socially sharp"
+
+              data-pipeline-title="Marketing and ecosystem path"
+
+              data-pipeline-summary="Filippo is strongest where positioning, founder visibility, and entrepreneurial community need to reinforce one another."
+
+              data-pipeline-1="Pressure-test Rubikon's external positioning"
+
+              data-pipeline-2="Explore founder-community distribution"
+
+              data-pipeline-3="Identify Lisbon and Southern European ecosystem bridges"
+            >
+              <span class="person-avatar">
+                FD
+              </span>
+
+              <span class="person-name">
+                Filippo
+              </span>
+            </button>
+
+
+            <!-- FRANCESCA -->
+            <button
+              class="person-node node-2"
+              type="button"
+
+              data-id="2"
+
+              data-name="Francesca Centini"
+
+              data-role="Founder · The Modern Renaissance"
+
+              data-city="Milano, Italy"
+
+              data-origin="Italy"
+
+              data-building="A multidisciplinary platform connecting neuroscience, music, art, and modern creative identity."
+
+              data-culture="Interdisciplinary, reflective, artistic, intellectually ambitious"
+
+              data-pipeline-title="Creative-intellectual synthesis path"
+
+              data-pipeline-summary="Francesca is strongest where culture, identity, science, and artistic expression need to become one coherent proposition."
+
+              data-pipeline-1="Explore cultural-fit language for Rubikon"
+
+              data-pipeline-2="Bridge creative and scientific communities"
+
+              data-pipeline-3="Test interdisciplinary identity signals"
+            >
+              <span class="person-avatar">
+                FC
+              </span>
+
+              <span class="person-name">
+                Francesca
+              </span>
+            </button>
+
+
+            <!-- MATTEO -->
+            <button
+              class="person-node node-3"
+              type="button"
+
+              data-id="3"
+
+              data-name="Matteo Demasi"
+
+              data-role="Founder · Sapio · Cybersecurity"
+
+              data-city="Zug, Switzerland"
+
+              data-origin="Italy"
+
+              data-building="Cybersecurity and digital sovereignty systems with a strategic European lens."
+
+              data-culture="Sovereignty-minded, rigorous, technical, long-range"
+
+              data-pipeline-title="Cybersecurity and sovereignty path"
+
+              data-pipeline-summary="Matteo is a high-trust connection for privacy, security architecture, digital sovereignty, and technical credibility."
+
+              data-pipeline-1="Pressure-test privacy architecture"
+
+              data-pipeline-2="Map cybersecurity requirements"
+
+              data-pipeline-3="Explore European digital-sovereignty positioning"
+            >
+              <span class="person-avatar">
+                MD
+              </span>
+
+              <span class="person-name">
+                Matteo
+              </span>
+            </button>
+
+
+            <!-- GALINA -->
+            <button
+              class="person-node node-4"
+              type="button"
+
+              data-id="4"
+
+              data-name="Galina Shakhanova"
+
+              data-role="Founder's Associate · DTM · McKinsey & Co"
+
+              data-city="Berlin, Germany"
+
+              data-origin="Kazakhstan"
+
+              data-building="Founder-level operating support across strategy, prioritization, and venture execution."
+
+              data-culture="Sharp, structured, strategic, execution-oriented"
+
+              data-pipeline-title="Strategic operations path"
+
+              data-pipeline-summary="Galina is strongest where ambiguous founder priorities need to become structured operational action."
+
+              data-pipeline-1="Pressure-test execution priorities"
+
+              data-pipeline-2="Translate vision into operating cadence"
+
+              data-pipeline-3="Explore Berlin founder and operator networks"
+            >
+              <span class="person-avatar">
+                GS
+              </span>
+
+              <span class="person-name">
+                Galina
+              </span>
+            </button>
+
+
+            <!-- AYUSH -->
+            <button
+              class="person-node node-5"
+              type="button"
+
+              data-id="5"
+
+              data-name="Ayush Sanghavi"
+
+              data-role="CEO · CaseSnappy"
+
+              data-city="New Haven, Connecticut"
+
+              data-origin="England / India"
+
+              data-building="Founder-led startup execution focused on product development and company building."
+
+              data-culture="Founder-driven, ambitious, pragmatic, startup-native"
+
+              data-pipeline-title="Founder-to-founder path"
+
+              data-pipeline-summary="Ayush is strongest as a product and company-building peer for testing founder assumptions and cross-market execution."
+
+              data-pipeline-1="Exchange founder-side product lessons"
+
+              data-pipeline-2="Explore US-Europe collaboration"
+
+              data-pipeline-3="Compare startup distribution strategies"
+            >
+              <span class="person-avatar">
+                AS
+              </span>
+
+              <span class="person-name">
+                Ayush
+              </span>
+            </button>
+
+
+            <!-- KOSTAS -->
+            <button
+              class="person-node node-6"
+              type="button"
+
+              data-id="6"
+
+              data-name="Kostas Mihalopoulos"
+
+              data-role="CEO · Runaway Truck Wash · Pharmaceutical Sales"
+
+              data-city="Austin, Texas"
+
+              data-origin="Texas / Greece"
+
+              data-building="Operational business growth across service delivery, sales, and commercial relationships."
+
+              data-culture="Commercial, resilient, relationship-driven, practical"
+
+              data-pipeline-title="Commercial execution path"
+
+              data-pipeline-summary="Kostas is strongest where relationship-building, sales instinct, and practical business execution need to intersect."
+
+              data-pipeline-1="Explore relationship-led sales logic"
+
+              data-pipeline-2="Compare operator-led execution"
+
+              data-pipeline-3="Identify commercial introductions in Texas"
+            >
+              <span class="person-avatar">
+                KM
+              </span>
+
+              <span class="person-name">
+                Kostas
+              </span>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- DYNAMIC DETAIL -->
+        <aside
+          class="connection-detail"
+          id="network-detail-card"
+        >
+
+          <p class="kicker">
+            Selected connection
+          </p>
+
+          <h2>
+            Select a collaborator.
+          </h2>
+
+          <p class="support-copy">
+            Rubikon should not only remember who someone is.
+            It should understand why the relationship matters now.
+          </p>
+
+          <div class="default-detail-flow">
+
+            <span>
+              Identity
+            </span>
+
+            <i></i>
+
+            <span>
+              Fit
+            </span>
+
+            <i></i>
+
+            <span>
+              Action
+            </span>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+
+      <!-- FUTURE TIER EXPLANATION -->
+      <div class="tier-explainer">
+
+        <article>
+          <span class="tier-index">
+            1
+          </span>
+
+          <div>
+            <p class="kicker">
+              Tier 1
+            </p>
+
+            <h3>
+              Highest-context relationships
+            </h3>
+
+            <p>
+              People you know, trust, and can meaningfully activate.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="tier-index">
+            2
+          </span>
+
+          <div>
+            <p class="kicker">
+              Tier 2
+            </p>
+
+            <h3>
+              Extended trusted ecosystem
+            </h3>
+
+            <p>
+              Relevant people connected through repeated context and shared work.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="tier-index">
+            3
+          </span>
+
+          <div>
+            <p class="kicker">
+              Tier 3
+            </p>
+
+            <h3>
+              Emerging people and projects
+            </h3>
+
+            <p>
+              Lower-context relationships surfaced when relevance increases.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         FLOWBOARD VIEW
+    ======================================================== -->
+    <section
+      id="flowboard-view"
+      class="view"
+      aria-labelledby="flowboard-title"
+    >
+
+      <div class="view-head">
+
+        <p class="eyebrow">
+          FlowBoard
+        </p>
+
+        <h1 id="flowboard-title">
+          See what is moving through
+          your network now.
+        </h1>
+
+        <p>
+          Search people, projects, capabilities, and signals.
+          FlowBoard converts network context into a possible next action.
+        </p>
+
+      </div>
+
+
+      <div class="flowboard-layout">
+
+        <!-- SIGNALS -->
+        <article class="flowboard-main">
+
+          <header class="card-head">
+
+            <div>
+              <p class="kicker">
+                Live relevance layer
+              </p>
+
+              <h2>
+                Signals and requests
+              </h2>
+            </div>
+
+            <p
+              class="card-meta"
+              id="results-count"
+            >
+              8 active signals
+            </p>
+
+          </header>
+
+
+          <!-- SEARCH -->
+          <div class="search-wrapper">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle
+                cx="11"
+                cy="11"
+                r="6.4"
+              />
+
+              <path
+                d="M16 16L21 21"
+              />
+            </svg>
+
+            <input
+              id="flow-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Search people, projects, capabilities, cities..."
+              aria-label="Search FlowBoard"
+            />
+
+          </div>
+
+
+          <!-- FILTERS -->
+          <div
+            class="quick-filters"
+            id="quick-tags"
+          >
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Generalists
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Polymaths
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Vibe coding
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Data scientists
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Cybersecurity
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Cross-cultural
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Transnational
+            </button>
+
+            <button
+              class="quick-filter"
+              type="button"
+            >
+              Agentic startups
+            </button>
+
+          </div>
+
+
+          <!-- SIGNALS LIST -->
+          <div
+            class="signals-list"
+            id="signals-list"
+          >
+
+            <article
+              class="signal-card"
+              data-search="generalists berlin founder product strategy startup ecosystems"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Person
+                </span>
+
+                <span class="signal-location">
+                  Berlin
+                </span>
+              </div>
+
+              <h3>
+                Founder looking for a product-thinking generalist
+              </h3>
+
+              <p>
+                Strong fit with startup ecosystems, narrative framing,
+                product strategy, and cross-functional execution.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Request introduction
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="agentic startups generalists polymaths ai automation founders operators"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Trend
+                </span>
+
+                <span class="signal-location">
+                  Europe
+                </span>
+              </div>
+
+              <h3>
+                Agentic startups are searching for cross-functional operators
+              </h3>
+
+              <p>
+                Demand is increasing for people who can move between
+                product, research, operations, narrative, and community.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Explore fit
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="polymaths cross-cultural transnational interdisciplinary teams talent"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Cluster
+                </span>
+
+                <span class="signal-location">
+                  Transnational
+                </span>
+              </div>
+
+              <h3>
+                Cross-cultural polymaths forming interdisciplinary teams
+              </h3>
+
+              <p>
+                High-fit profiles combine strategy, narrative, product,
+                culture, and ecosystem intelligence.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                See cluster
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="vibe coding prototype interface frontend creative coding generalists"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Capability
+                </span>
+
+                <span class="signal-location">
+                  Remote
+                </span>
+              </div>
+
+              <h3>
+                Vibe coders needed for concept-to-interface sprints
+              </h3>
+
+              <p>
+                Designers, storytellers, and technical generalists are
+                converging around faster product prototyping.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Join build thread
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="data scientists data science analytics ranking matching recommendation trust graph"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Capability
+                </span>
+
+                <span class="signal-location">
+                  DACH
+                </span>
+              </div>
+
+              <h3>
+                Data scientists for matching and trust intelligence
+              </h3>
+
+              <p>
+                Relevant for recommendation logic, relationship scoring,
+                network graphs, and dynamic opportunity ranking.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Map capability
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="cybersecurity privacy identity trust secure systems sovereignty"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Capability
+                </span>
+
+                <span class="signal-location">
+                  Europe
+                </span>
+              </div>
+
+              <h3>
+                Cybersecurity builders for identity-first products
+              </h3>
+
+              <p>
+                Privacy, permissions, authentication, and secure context
+                become foundational when a system understands relationships.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Find experts
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="cross-cultural international lisbon market entry community founder marketing"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Request
+                </span>
+
+                <span class="signal-location">
+                  Lisbon
+                </span>
+              </div>
+
+              <h3>
+                Cross-cultural operator for European market entry
+              </h3>
+
+              <p>
+                A founder ecosystem needs someone who can translate
+                positioning and community context across markets.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Offer support
+              </button>
+
+            </article>
+
+
+            <article
+              class="signal-card"
+              data-search="transnational team germany italy switzerland united states cybersecurity agentic startups"
+            >
+
+              <div class="signal-topline">
+                <span class="signal-type">
+                  Team
+                </span>
+
+                <span class="signal-location">
+                  Multi-market
+                </span>
+              </div>
+
+              <h3>
+                Transnational team assembling around trust infrastructure
+              </h3>
+
+              <p>
+                The team needs product, cybersecurity, data, and ecosystem
+                perspectives across several operating contexts.
+              </p>
+
+              <button
+                class="signal-action"
+                type="button"
+              >
+                Open team path
+              </button>
+
+            </article>
+
+          </div>
+
+
+          <p
+            class="empty-results"
+            id="empty-results"
+            hidden
+          >
+            No active signals match this search.
+          </p>
+
+        </article>
+
+
+        <!-- OPPORTUNITY PIPELINE -->
+        <aside class="opportunity-panel">
+
+          <p class="kicker">
+            Opportunity pipeline
+          </p>
+
+          <h2>
+            From signal
+            to action.
+          </h2>
+
+          <p class="support-copy">
+            Rubikon should reduce discovery friction until a relevant
+            signal becomes one deliberate relationship move.
+          </p>
+
+
+          <div class="opportunity-flow">
+
+            <article class="opportunity-item">
+
+              <span class="opportunity-index">
+                01
+              </span>
+
+              <div>
+                <p class="pipeline-type">
+                  Warm introduction
+                </p>
+
+                <h3>
+                  Founder and ecosystem operators
+                </h3>
+
+                <p>
+                  Use existing trust to enter relevant entrepreneurial networks.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="opportunity-item">
+
+              <span class="opportunity-index">
+                02
+              </span>
+
+              <div>
+                <p class="pipeline-type">
+                  Potential match
+                </p>
+
+                <h3>
+                  Generalist roles in agentic startups
+                </h3>
+
+                <p>
+                  Connect multidisciplinary operators to fast-moving teams.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="opportunity-item">
+
+              <span class="opportunity-index">
+                03
+              </span>
+
+              <div>
+                <p class="pipeline-type">
+                  Capability cluster
+                </p>
+
+                <h3>
+                  Data science + cybersecurity
+                </h3>
+
+                <p>
+                  Build the intelligence and trust layer around the network.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="opportunity-item final-opportunity">
+
+              <span class="opportunity-index">
+                ✓
+              </span>
+
+              <div>
+                <p class="pipeline-type">
+                  Next action
+                </p>
+
+                <h3>
+                  Request one relevant introduction
+                </h3>
+
+                <p>
+                  Turn the strongest signal into one deliberate next move.
+                </p>
+              </div>
+
+            </article>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+
+      <!-- CONCEPT STRIP -->
+      <div class="flow-concept">
+
+        <div>
+          <span>01</span>
+          <p>Conversation</p>
+        </div>
+
+        <i></i>
+
+        <div>
+          <span>02</span>
+          <p>Context</p>
+        </div>
+
+        <i></i>
+
+        <div>
+          <span>03</span>
+          <p>Signal</p>
+        </div>
+
+        <i></i>
+
+        <div>
+          <span>04</span>
+          <p>Match</p>
+        </div>
+
+        <i></i>
+
+        <div class="flow-concept-final">
+          <span>✓</span>
+          <p>Collaboration</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="new-rubicon-script.js"></script>
 </body>
 </html>
